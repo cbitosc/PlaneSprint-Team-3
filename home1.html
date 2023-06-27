@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>homepage</title>
+    <style>
+        body {
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://resources.biginterview.com/wp-content/uploads/2023/04/most-common-interview-questions.png');
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .homeimage {
+            width: 250px;
+            height: 250px;
+            margin-right: 10px;
+        }
+
+        .container_one {
+            margin-top: 105px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(2, 1, 1);
+            background-color: white;
+            border-radius: 10px;
+            height: 400px;
+            width: 770px;
+        }
+
+        .container_three {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container_main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container_two {
+
+            border-style: solid;
+            border-color: rgba(148, 133, 133, 0.219);
+            height: 200px;
+            width: 300px;
+            border-width: 1px;
+            ;
+
+
+
+        }
+
+        .container_four {
+            border-style: solid;
+            border-color: rgba(148, 133, 133, 0.219);
+            height: 50px;
+            width: 300px;
+            border-width: 1px;
+            margin-top: 10px;
+        }
+
+
+        .username {
+            width: 235px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+
+            border-radius: 5px;
+            background-color: #fafafa;
+            outline: none;
+            border: 1px solid;
+            border-color: #eeeeee;
+        }
+
+        .password {
+            width: 235px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-color: #eeeeee;
+            border-radius: 5px;
+            outline: none;
+            background-color: #fafafa;
+            border: 1px solid;
+            border-color: #eeeeee;
+        }
+
+        .submit {
+            width: 235px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #13254c;
+            color: aliceblue;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border-color: #33414b;
+            border-radius: 5px;
+            box-shadow: none;
+
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: small;
+        }
+
+
+
+
+
+
+
+        .signup {
+            color: #33414b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_one">
+
+            <img src="C:\Users\User\Desktop\askconnect.png" class="homeimage">
+
+            <form action="newpage.html">
+                <div class="container_main">
+                    <div class="container_two">
+
+                        <div class="container_three">
+                            <input type="text" placeholder="Username" class="username">
+                            <input type="password" placeholder="Password" class="password">
+                            <input type="submit" value="Log in" class="submit">
+                        </div>
+
+
+                    </div>
+                    <div class="container_four">
+                        <p>Don't have an account? <a href="signup.html"><b class="signup">Sign up</b></a></p>
+                    </div>
+
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
