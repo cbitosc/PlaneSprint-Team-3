@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>College </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            overflow: hidden;
+        }
+
+
+        .part2 {
+            border: 0.5px solid rgb(170, 167, 167);
+            width: 100%;
+            height: 16%;
+            background-color: white;
+            display: flex;
+        }
+
+        .btn {
+            height: 50px;
+            width: 40px;
+            margin-top: 5px;
+            border: none;
+            color: #b92b27;
+            font-size: 25px;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .part3 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo {
+            margin-right: 40px;
+
+        }
+
+        .bar {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .top {
+            width: 700px;
+            margin-top: 15px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            border-radius: 15px;
+            border: black;
+            background-color: #f0eded;
+            margin-left: 40px;
+            margin-right: 40px;
+            border: 1px solid#858687;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part4 {
+            display: flex;
+            flex-direction: column;
+
+            width: 20%;
+            height: 700px;
+            border-right: 2px solid #2e2d2d;
+            overflow: auto;
+            overflow-x: hidden;
+
+
+        }
+
+        .container {
+            overflow-y: hidden;
+        }
+
+        .a {
+
+            border: #c8c8c8;
+            height: 45px;
+            width: 300px;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            margin-left: 5px;
+            margin-right: 25px;
+            box-sizing: border-box;
+            color: #858687;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            border: 1px solid;
+            border: none;
+            justify-content: center;
+            align-items: center;
+            background-color: #ece9e9;
+        }
+
+        div#abc>button:hover {
+            background: #c8c8c8;
+            color: #494646;
+        }
+
+        .search1 {
+            height: 40px;
+            width: 600px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #fafafa;
+            outline: none;
+            border: 1px solid;
+            border-color: #eeeeee;
+            margin-right: 15px;
+        }
+
+        .btn2 {
+            height: 35px;
+            width: 130px;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            margin-left: 5px;
+            margin-right: 25px;
+            box-sizing: border-box;
+            color: white;
+            border-radius: 5px;
+            background-color: #b92b27;
+            outline: none;
+            border: 1px solid;
+            border-color: #b92b27;
+        }
+
+        .aqs {
+            margin-left: 100px;
+        }
+
+        .search {
+            height: 40px;
+            width: 300px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #fafafa;
+            outline: none;
+            border: 1px solid;
+            border-color: #eeeeee;
+            margin-right: 15px;
+        }
+
+        .ask {
+            height: 40px;
+            width: 200px;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 5px;
+            margin-right: 25px;
+            box-sizing: border-box;
+            color: white;
+            border-radius: 5px;
+            background-color: #b92b27;
+            outline: none;
+            border: 1px solid;
+            border-color: #b92b27;
+        }
+
+        .btn1 {
+            margin-left: 5px;
+            height: 50px;
+            width: 40px;
+            margin-top: 5px;
+            border: none;
+            color: #b92b27;
+            font-size: 25px;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        .profile {
+            margin-top: 15px;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+        }
+
+        .profile1 {
+            margin-right: 5px;
+            margin-top: 4px;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+        }
+
+        .part5 {
+            overflow-x: hidden;
+
+        }
+
+        .qs {
+            width: 700px;
+            height: auto;
+            border: #000000 solid 1px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 40px;
+
+            justify-content: center;
+        }
+
+        .user {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+        .votes {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+
+
+        }
+
+        .upvote {
+            font-size: larger;
+            color: #b92b27;
+            background-color: white;
+            border: none;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .downvote {
+            margin-left: 5px;
+            background-color: white;
+            border: none;
+            color: #1b4e90;
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        .qanda {
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <script href="home.js"></script>
+    <div class="container">
+        <div class="part2">
+            <img class="logo" src="https://logos-world.net/wp-content/uploads/2022/05/Ask.com-Logo.png" height="60px"
+                width="200px">&nbsp;
+            <button class="btn"><i class="fa fa-bars"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn"><i class="fa fa-home"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn"><i class="fa fa-edit"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn"><i class="fa fa-bell"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn"><i class="fa fa-comments"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="search" placeholder="Search">
+            <button class="ask">Ask a question</button>
+            <button class="btn1"><i class="fa fa-language"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubQ1Ry37gCoiYeSmHc5PQzI138wqfbgwTFuc7obaU&s"
+                class="profile">
+
+
+        </div>
+        <div class="part3">
+            <div id="abc" class="part4">
+                <button class="a">Algebra</button>
+                <button class="a">Calculus</button>
+                <button class="a">Geometry</button>
+                <button class="a">Geometry</button>
+                <button class="a">Zoology</button>
+                <button class="a">Arts</button>
+                <button class="a">Botany</button>
+                <button class="a">Chemistry</button>
+                <button class="a">Physics</button>
+                <button class="a">Physics</button>
+                <button class="a">Arts</button>
+                <button class="a">Botany</button>
+                <button class="a">Chemistry</button>
+                <button class="a">Physics</button>
+                <button class="a">Physics</button>
+                <button class="a">Chemistry</button>
+                <button class="a">Physics</button>
+                <button class="a">Physics</button>
+
+            </div>
+            <div class="part5">
+                <div class="top">
+                    <div class="bar">
+                        <img class="profile"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubQ1Ry37gCoiYeSmHc5PQzI138wqfbgwTFuc7obaU&s">
+                        <input class="search1" placeholder="What do you want to ask or share?">
+                    </div>
+
+                    <div class="aqs">
+                        <button class="btn2">Answer</button>
+                        <button class="btn2">Ask</button>
+                        <button class="btn2">Post</button>
+                    </div>
+                </div>
+                <div class="qs">
+
+                    <div class="user">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQubQ1Ry37gCoiYeSmHc5PQzI138wqfbgwTFuc7obaU&s"
+                            class="profile1">
+
+                        <div class="desc">
+                            <p><b>Jayesh</b></p>
+                            <p>Software Developer|Philantropist</p>
+                        </div>
+                    </div>
+                    <div class="qanda">
+
+                        <p class="q">How to get started with coding?</p><br>
+                        <p class="ans">If you're wondering how to become a coder in three to six months and have no
+                            coding, web development or software engineering experience, you'll want to enroll in a
+                            coding bootcamp. Coding bootcamps are intensive programs that help students build
+                            foundational knowledge in core technologies. You can also practice in platforms like
+                            codechef, hackerrank and leet code. You can use books, online courses, YouTube
+                            tutorials, and online communities to help you master the fundamentals.</p>
+
+
+                    </div>
+                    <br>
+
+                    <div class="votes">
+                        <button class="upvote"><i
+                                class="fa fa-arrow-circle-up"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="downvote"><i
+                                class="fa fa-arrow-circle-down"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
